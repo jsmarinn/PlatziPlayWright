@@ -8,4 +8,5 @@ test('test', async ({ page }) => {
   await page.locator('text=Aristotle').click();
   await page.locator('a.nav-link:has-text("Resources")').click();
   await page.locator('a.nav-link:has-text("Home")').click();
+  await page.locator('a', {hasText: 'Dynamic Table'}).click();
 });
